@@ -1,1 +1,14 @@
-{}
+{
+  "textFontFamily": "",
+  "interfaceFontFamily": "",
+  "accentColor": "#9c00ec",
+  "monospaceFontFamily": "VCR OSD Mono",
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "cssTheme": "Encore",
+  "enabledCssSnippets": [
+    "headings_stardom",
+    "custom-fonts"
+  ],
+  "theme": "obsidian"
+}

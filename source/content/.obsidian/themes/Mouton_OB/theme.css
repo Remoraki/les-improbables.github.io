@@ -1,0 +1,349 @@
+/* 
+This code was created by Oczko24.
+For more details, visit:
+https://github.com/Oczko24/Obsidian-transparent
+
+Your feedback and suggestions are greatly appreciated! 
+I’m working to make this as polished and functional as possible. Thanks for your support!
+*/
+
+
+/* ===================== vars ===================== */
+:root {
+  --tr: Transparent;
+  --set-blur: 80px;
+  --mobile-sidebar-min-width: 100vw;
+  /* there is background */
+}
+/* in general main things to make this theme work */ 
+body {
+  --background-primary: var(--tr);
+  --background-secondary: var(--tr);
+  --divider-width: 0px;
+  --divider-color: var(--tr);
+  --background-modifier-border: essaopie;
+}
+/* ===================== vars ===================== */
+
+/* ===================== theme-light ===================== */
+.theme-light .workspace {
+  backdrop-filter: brightness(4) blur(var(--set-blur));
+  --icon-color: #000000;
+}
+.theme-light {
+  --brightness: 1.3;
+  --kolorboku: #1d1d1f; /* texe color readable black */
+}
+/* ===================== theme-light ===================== */
+
+
+/* ===================== theme-dark ===================== */
+.theme-dark .workspace {
+  backdrop-filter: brightness(0.54) blur(var(--set-blur));
+  --icon-color: #ffffff;
+}
+
+.theme-dark {
+  --kolorboku: #e2e0dc; /* text color readable white */
+  --brightness: 0.50;
+  --interactive-hover: #00000060;
+  --input-shadow-hover:
+  inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+  0 0 4px 1px rgba(255, 255, 255, 0.08);
+  --background-modifier-border-focus: #55555560 /*     --color-base-40: #555555; but with 60 */
+}
+/* ===================== theme-dark ===================== */
+
+
+/* left menu text */
+.nav-file-title, .nav-folder-title {
+  color: var(--kolorboku);
+}
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+/* there is background image coded in base64 in var. Change it if you wanna. */
+.horizontal-main-container {
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  background-position: absolute;
+}
+body.is-focused .titlebar,
+body.is-focused .workspace-ribbon.mod-left {
+  --titlebar-background: var(--tr);
+}
+
+
+.workspace-tab-header-container {
+  background-color: var(--tr);
+}
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+  background-color: var(--tr);
+}
+
+.modal {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+  background-color: var(--tr);
+  position: relative;
+  z-index: 1000;
+}
+.modal-bg {
+  width: 100%;
+  background-color: var(--tr);
+}
+.menu {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+}
+
+.prompt {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+  background-color: var(--tr);
+}
+
+
+/* dont add blur in small places because its useless */
+textarea,
+input.metadata-input-text,
+input[type='date'],
+input[type='datetime-local'],
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+
+  background-color: #00000060;
+}
+/* sliders */
+input[type='range'] {
+  background-color: #00000060;
+}
+
+.suggestion-container.mod-search-suggestion {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border-color: var(--tr);
+  max-height: 600px;
+}
+
+/* finnally buttons look good */
+button:not(.clickable-icon) {
+  background-color: var(--color-accent);
+  box-shadow: none;
+  color: #060606;
+}
+button {
+  color: #060606;
+}
+
+/* right click on top right centered down arrow adjustments */
+.menu-scroll {
+    display: inline;
+}
+
+
+/* presentation background fix */
+.reveal .slide-background-content {
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+
+/* done task fix */
+input[type=checkbox]:checked:after {
+  background-color: #1C2E28;
+}
+
+/* musze ustandaryzować w theme-light odcien bluru + przezroczystosci aby wydac 2.0 albo po prostu nie kopiowac kodu x2 tylko zrobic wszysko w zmiennych tak jak bylo w zamysle xd*/
+.theme-light select,
+.dropdown {
+  background-color: #d3d3d370;
+  box-shadow: none;
+}
+
+.theme-dark select,
+.dropdown {
+  background-color: #00000060;
+  box-shadow: none;
+}
+
+.suggestion { 
+    background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); /* tasks integration */
+}
+/* blur of 80px looks bad there */
+.status-bar {
+  backdrop-filter: blur(2px);
+}
+
+.notice {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+    color: var(--kolorboku);
+}
+
+/* graph view */
+.graph-controls {
+  background-color: rgba(0, 0, 0, var(--brightness));
+}
+.graph-controls:not(.is-close) {
+  box-shadow: none;
+}
+
+/* making tables more visible, until now it was fully transparent and now they are visible it is easier to navigate for new obsidian users */ 
+.cm-html-embed td, .markdown-rendered td, .cm-html-embed th, .markdown-rendered th {
+    border: var(--table-border-width) solid #ffffff10;
+}
+.cm-html-embed thead tr > th, .markdown-rendered thead tr > th {
+    border-color: #ffffff10;
+}
+/* tables */
+
+
+
+
+
+/* code blocks looks beautiful */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: #00000060;
+}
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-inline-end: 0;
+}
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  background-color: #00000060; /* smol */
+}
+.markdown-rendered pre {
+  background-color: #00000060;
+}
+.markdown-rendered code {
+  background-color: #00000060; /* both for read mode */
+}
+.cm-s-obsidian span.cm-inline-code {
+  background-color: #00000060; /* source mode edit */
+}
+.checkbox-container:after {
+  background-color: #00000099;
+}
+element.style {
+  visibility: visible; /* idk if its matters but it icon look like refresh */
+}
+.slider {
+  color: #000000;
+  background-color: #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+
+}
+/* canvas */
+.canvas-control-item {
+  background-color: #00000000;
+}
+
+.canvas-card-menu {
+  box-shadow: none;
+}
+.canvas-control-group {
+  box-shadow: none;
+}
+
+/* hover on links */ 
+.popover.hover-popover .markdown-preview-view {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+.file-embed {
+  background-color: #00000060;
+}
+
+
+
+/* make.md integration */
+
+.mk-menu-container {
+  width: auto;
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+/* templater code look better */ 
+.cm-s-obsidian .templater-command-bg {
+  background-color: #00000060;
+}
+
+/* better settings */ 
+.vertical-tab-header-group-title {
+  color: var(--color-accent);
+}
+
+/* mobile */
+/* better settings on mobile  */
+.is-phone .vertical-tab-header-group-title, .is-phone .setting-item-heading .setting-item-name {
+    color: var(--color-accent);
+}
+
+/* tab manager on mobile/ */
+.mobile-tab-preview-empty {
+    box-shadow: none;
+}
+.mobile-tab-preview:before {
+    box-shadow: 0 0px 30px 15px rgba(0, 0, 0, 0.2);
+}
+/* */
+
+
+.is-phone, .workspace-drawer {
+  background-color: #000000;
+  position: fixed;
+  z-index: 10000000;
+}
+
+.mobile-toolbar-options-list {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border-color: var(--tr);
+}
+.mobile-toolbar {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+.mobile-navbar {
+  background-color: #000000;
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  padding: var(--size-4-2) max(var(--safe-area-inset-right), var(--size-4-4)) max(var(--size-4-2), var(--safe-area-inset-bottom)) max(var(--safe-area-inset-left), var(--size-4-4));
+  position: relative;
+  z-index: 1;
+}
+.is-phone .workspace-split {
+    padding-top: 0;
+}
+.is-phone .mobile-tab-switcher {
+  backdrop-filter: blur(var(--set-blur));
+}
+/* sliders mobile */ 
+input[type='range'] {
+    background-color: var(--interactive-accent)
+}
+
+/* work in progress lol
+/* folders, search bar etc. blur 
+.workspace-drawer.mod-left {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(50px);
+}
+/* blur on the right menu, same as 5 lines above 
+.workspace-drawer.mod-right {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(50px);
+}
+
+*/
+

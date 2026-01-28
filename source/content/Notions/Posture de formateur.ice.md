@@ -1,0 +1,13 @@
+- **Posture de professeur**
+	  - Position de savoir, "je vais vous apprendre", potentiellement strict
+- **Posture de pote**
+	  - Posture plus "casual", plus relâchée
+- **Posture de gourou**
+	  - Presque comme le Professeur, mais en plus idolâtré, et plus sectaire :: dans l'idée, le gourou essaie plus d'inculquer sa vision de l'impro aux élèves
+- **Posture d'animateur de colo**
+	  - Très binaire : si les choses se passent bien, tout ce passe bien, sinon, peut être plus rigide
+	    Dans l'idée, l'animateur de colo essaie moins d'apprendre des choses aux élèves, mais plus de "faire son taff"
+- **Posture de psychologue**
+  - Trop personnel
+- **Posture d'accompagnateur.ice bienveillant.e **  
+  - Accompagnant.e d'impro bienveillant.e, en gardant une vision de où en est qui, et essayer de guider les élèves plutôt que de les tirer vers le point où on souhaite aller

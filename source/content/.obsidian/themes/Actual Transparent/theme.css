@@ -1,0 +1,359 @@
+/* 
+This code was created by Oczko24.
+For more details, visit:
+https://github.com/Oczko24/Obsidian-transparent
+
+Your feedback and suggestions are greatly appreciated! 
+I'm working to make this as polished and functional as possible. Thanks for your support!
+*/
+
+
+/* vars */
+:root {
+  --tr: Transparent;
+  --set-blur: 80px;
+  --kolorboku: #ffffff;
+  /* there is background */
+  --background-image-base64: url("");
+
+  --mobile-sidebar-min-width: 100vw
+}
+body {
+  --background-primary: var(--tr);
+  --background-secondary: var(--tr);
+  --divider-width: 0px;
+  --divider-color: var(--tr);
+  --background-modifier-border: essaopie;
+}
+
+.theme-light .workspace {
+  backdrop-filter: brightness(3) blur(var(--set-blur));
+  --icon-color: #000000;
+  --icon-color: var(--kolorboku);
+}
+.nav-file-title, .nav-folder-title {
+  color: var(--kolorboku);
+}
+
+.theme-dark .workspace {
+  backdrop-filter: brightness(0.54) blur(var(--set-blur));
+  --icon-color: #ffffff;
+}
+
+.theme-light {
+  --brightness: 3;
+}
+.theme-dark {
+  --brightness: 0.50;
+}
+
+.nav-file-title,
+.nav-folder-title {
+  color: var(--kolorboku);
+}
+
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+/* there is background image coded in base64 in var. Change it if you wanna. */
+.horizontal-main-container {
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  background-position: absolute;
+}
+body.is-focused .titlebar,
+body.is-focused .workspace-ribbon.mod-left {
+  --titlebar-background: var(--tr);
+}
+
+
+.workspace-tab-header-container {
+  background-color: var(--tr);
+}
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+  background-color: var(--tr);
+}
+
+.modal {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1000;
+}
+.modal-bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.menu {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+}
+
+.prompt {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border: 1px solid var(--tr);
+  background-color: var(--tr);
+}
+
+
+/* dont add blur in small places because its useless */
+textarea,
+input.metadata-input-text,
+input[type='date'],
+input[type='datetime-local'],
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+  background-color: #00000060;
+  backdrop-filter: blur(calc(var(--set-blur) * 0.5));
+}
+
+.suggestion-container.mod-search-suggestion {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border-color: var(--tr);
+  max-height: 600px;
+}
+
+/* finnally buttons look good */
+button:not(.clickable-icon) {
+  background-color: var(--color-accent);
+  box-shadow: none;
+  color: #060606;
+}
+button {
+  color: #060606;
+}
+
+
+
+/* sliders */
+input[type='range'] {
+  background-color: #00000060;
+}
+
+/* presentation background fix */
+.reveal .slide-background-content {
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+
+/* done task fix */
+input[type=checkbox]:checked:after {
+  background-color: #1C2E28;
+}
+
+
+select,
+.dropdown {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(var(--set-blur));
+  box-shadow: none;
+}
+.suggestion { 
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); /* tasks integration */
+}
+.status-bar {
+  backdrop-filter: blur(2px);
+}
+.notice {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));   
+}
+
+/* graph view */
+.graph-controls {
+  background-color: rgba(0, 0, 0, var(--brightness));
+  backdrop-filter: blur(var(--set-blur));
+}
+.graph-controls:not(.is-close) {
+  box-shadow: none;
+}
+
+/* code blocks */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: #00000060;
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-inline-end: 0;
+}
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  background-color: #00000060; /* smol */
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+.markdown-rendered pre {
+  background-color: #00000060;
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+.markdown-rendered code {
+  background-color: #00000060; /* both for read mode */
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+.cm-s-obsidian span.cm-inline-code {
+  background-color: #00000060; /* source mode edit */
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+.checkbox-container:after {
+  background-color: #00000099;
+}
+element.style {
+  visibility: visible; /* idk if its matters but it icon look like refresh */
+}
+.slider {
+  color: #000000;
+  background-color: #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* canvas */
+.canvas-control-item {
+  background-color: #00000000;
+}
+
+.canvas-card-menu {
+  box-shadow: none;
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+.canvas-control-group {
+  box-shadow: none;
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+
+/* hover on links */ 
+.popover.hover-popover .markdown-preview-view {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+.file-embed {
+  background-color: #00000060;
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+
+/* make.md integration */
+.mk-menu-container {
+  width: auto;
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+/* templater code look better */ 
+.cm-s-obsidian .templater-command-bg {
+  background-color: #00000060;
+  backdrop-filter: blur(calc(var(--set-blur) * 0.3));
+}
+
+/* Tooltips and other floating elements */
+.tooltip {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+
+/* Dropdowns and context menus */
+.dropdown-menu {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+
+/* Floating action buttons */
+.floating-button {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+
+/* Any popover or floating container */
+.popover, .floating-container {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+
+/* ================================== TESTING ANIMATIONS ================================== */
+/* Keyframes for the opening animation */
+@keyframes modalOpen {
+  0% {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-20px); /* Start slightly off-screen */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at the final position */
+  }
+}
+
+/* When the modal is closed, apply this animation */
+.modal-container.mod-dim .modal.closed {
+  animation: modalClose 0.3s ease-in forwards; /* Animation for closing */
+}
+
+/* Keyframes for the closing animation */
+@keyframes modalClose {
+  0% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Current position */
+  }
+  100% {
+    opacity: 0; /* Fully hidden */
+    transform: translateY(-20px); /* Move off-screen */
+  }
+}
+/* ================================== TESTING ANIMATIONS ================================== */
+/* better settings */ 
+.vertical-tab-header-group-title {
+  color: var(--color-accent);
+}
+
+/* mobile (unended) */
+.is-phone, .workspace-drawer {
+  background-color: #000000;
+  position: fixed;
+  z-index: 10000000;
+}
+
+.mobile-toolbar-options-list {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  border-color: var(--tr);
+}
+.mobile-toolbar {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: var(--tr);
+}
+.mobile-navbar {
+  background-color: #000000;
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  padding: var(--size-4-2) max(var(--safe-area-inset-right), var(--size-4-4)) max(var(--size-4-2), var(--safe-area-inset-bottom)) max(var(--safe-area-inset-left), var(--size-4-4));
+  position: relative;
+  z-index: 1;
+}
+.is-phone .workspace-split {
+    padding-top: 0;
+}
+.is-phone .mobile-tab-switcher {
+  backdrop-filter: blur(var(--set-blur));
+}
+.vertical-tab-header, .vertical-tab-content, .setting-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.setting-item-heading, .setting-item-name, .setting-item-description {
+  color: var(--text-normal);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,8 @@
+{
+  "encore-settings@@theme-dark": "encore-theme-dark-glass-royale",
+  "encore-settings@@theme-light": "encore-theme-light-sterling",
+  "encore-settings@@colors": "encore-colors-colorful",
+  "encore-settings@@encore-translucency": false,
+  "encore-settings@@encore-disable-grain": true,
+  "encore-settings@@encore-fancy-headers": true
+}
