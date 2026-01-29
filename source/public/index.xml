@@ -1,22 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>MoutonQuartz</title>
-      <link>https://moutondemocrate.com</link>
-      <description>Last 10 notes on MoutonQuartz</description>
+      <title>Les !mprobables</title>
+      <link>https://les-improbables.github.io</link>
+      <description>Les dernières 10 notes on Les !mprobables</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>MoutonQuartz</title>
-    <link>https://moutondemocrate.com/</link>
-    <guid>https://moutondemocrate.com/</guid>
-    <description>This is a simple static website built with Quartz. It serves as a base to build a website from an Obsidian vault. You can find the source code on Github : MoutonQuartz If you like it, check out the original : Quartz.</description>
-    <pubDate>Wed, 28 Jan 2026 00:42:10 GMT</pubDate>
+    <title>Comment contribuer</title>
+    <link>https://les-improbables.github.io/Comment-contribuer</link>
+    <guid>https://les-improbables.github.io/Comment-contribuer</guid>
+    <description>bonjour.</description>
+    <pubDate>Wed, 28 Jan 2026 02:56:13 GMT</pubDate>
   </item><item>
-    <title>Some note</title>
-    <link>https://moutondemocrate.com/Test-Category/Some-note</link>
-    <guid>https://moutondemocrate.com/Test-Category/Some-note</guid>
-    <description>Just another note, but it links to index.</description>
-    <pubDate>Wed, 28 Jan 2026 00:42:10 GMT</pubDate>
+    <title>Bienvenue !</title>
+    <link>https://les-improbables.github.io/</link>
+    <guid>https://les-improbables.github.io/</guid>
+    <description>Que vous soyez un.e membre débutant, un.e expert.e, ou simplement un.e curieux.se, vous êtes le.la bienvenu.e sur le Wiki des !mprobables! Ce wiki a pour objectif de centraliser ...</description>
+    <pubDate>Wed, 28 Jan 2026 02:47:34 GMT</pubDate>
+  </item><item>
+    <title>Youri</title>
+    <link>https://les-improbables.github.io/Formations/Exercices/Youri</link>
+    <guid>https://les-improbables.github.io/Formations/Exercices/Youri</guid>
+    <description>...</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>Formation de Formation en Impro</title>
+    <link>https://les-improbables.github.io/Formations/Formation-de-Formation-en-Impro</link>
+    <guid>https://les-improbables.github.io/Formations/Formation-de-Formation-en-Impro</guid>
+    <description> Important de savoir quelle Posture de formateur.ice on souhaite adopter. Toujours faire attentions aux États d’apprentissage des élèves. Important d’admettre ses propres échecs en tant que formateur.ice.</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>Préparer un exercice...</title>
+    <link>https://les-improbables.github.io/Formations/Pr%C3%A9parer-un-exercice...</link>
+    <guid>https://les-improbables.github.io/Formations/Pr%C3%A9parer-un-exercice...</guid>
+    <description>Plusieurs choses à préparer en amont : Quel est l’objectif de l’exercice ? Quelle est la compétence que l’on cherche à travailler ? Pourquoi cet exercice ? Quelle est sa valeur par rapport ...</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>HHS (Happy, Healthy, Sexy)</title>
+    <link>https://les-improbables.github.io/Notions/HHS-(Happy,-Healthy,-Sexy)</link>
+    <guid>https://les-improbables.github.io/Notions/HHS-(Happy,-Healthy,-Sexy)</guid>
+    <description>Attitude de l’improvisateur.ice qui consiste à former un masque de confiance, “je sais ce que je fais, je suis compétent.te, je n’ai pas peur” Ça aide le public à sentir la hype Ça aide ...</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>Posture de formateur.ice</title>
+    <link>https://les-improbables.github.io/Notions/Posture-de-formateur.ice</link>
+    <guid>https://les-improbables.github.io/Notions/Posture-de-formateur.ice</guid>
+    <description>...</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>Pédagogie par l&#039;échec</title>
+    <link>https://les-improbables.github.io/Notions/P%C3%A9dagogie-par-l'%C3%A9chec</link>
+    <guid>https://les-improbables.github.io/Notions/P%C3%A9dagogie-par-l'%C3%A9chec</guid>
+    <description>Lié à l’idée de l’échec en improvisation. Type de pédagogie liée à la montrer aux élèves leurs échecs.</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>Échec</title>
+    <link>https://les-improbables.github.io/Notions/%C3%89chec</link>
+    <guid>https://les-improbables.github.io/Notions/%C3%89chec</guid>
+    <description>L’échec en improvisation est un sujet compliqué. Le véritable échec n’existe pas en impro, et on va parler de “perdre” plus souvent. Perdre, c’est rater une action, oublier le nom d’un personnage, complètement manquer l’accent qu’on faisait.</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
+  </item><item>
+    <title>États d&#039;apprentissage</title>
+    <link>https://les-improbables.github.io/Notions/%C3%89tats-d'apprentissage</link>
+    <guid>https://les-improbables.github.io/Notions/%C3%89tats-d'apprentissage</guid>
+    <description>...</description>
+    <pubDate>Wed, 28 Jan 2026 02:45:59 GMT</pubDate>
   </item>
     </channel>
   </rss>
