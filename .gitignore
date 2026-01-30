@@ -1,3 +1,5 @@
 .trash/*
 source/node_modules
 source/content/.obsidian
+source/content/.obsidian/*
+source/content/.obsidian

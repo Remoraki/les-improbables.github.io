@@ -10,7 +10,7 @@ Vous savez ce qu'on dit :
 > **"Il est important de partager la connaissance, parce que c'est très cool."** <br>
 > - *Laérian, là-maintenant (j'ai improvisé une citation)*
 
-Si vous voulez ajouter à ce wiki, n'hésitez pas à consulter la page [[Comment contribuer]] pour plus d'informations.
+Si vous voulez ajouter à ce wiki, n'hésitez pas à consulter la page [[Comment contribuer]] pour plus d'informations. Si vous voulez des informations sur le projet lui-même, visitez la catégorie [[/Méta]].
 
 ## Sommaire
 
