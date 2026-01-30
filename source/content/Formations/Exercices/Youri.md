@@ -1,10 +1,12 @@
-  
+Cet exercice, nommé après le premier humain dans l'espace, Youri Gagarine, est un exercice de danse improvisée dans lequel les danseurs.euses essaient de faire deviner un événement historique à travers une danse très abstraite.
 - **OBJECTIF**
 	- Corporalité
 	- Jeu impulsif
 	- Analyser ce que font les autres et réagir (Réactions)
 - **VALEURS PARTICULIÈRES**
-	- Musical
+	- #ExerciceMusical
+	- #ExerciceDeGroupe
+	- #ExerciceDansé
 - **CONSIGNE**
 	- Un groupe de 4+ danseurs.euses sortent de la salle
 	- Iels choisissent un événement historique connu (ex: la chute de Rome, l'indépendance des États-Unis, l'invention de l'école)
@@ -17,3 +19,4 @@
 	  Et aussi jouer avec les autres.
 
 ## Version 2 : l'Imposteur
+Un des danseurs est déclaré **imposteur** et n'est **pas mis au courant** de l'événement historique. Le public ne sait pas qui est l'imposteur, et doit deviner à la fin de l'exercice qui était l'imposteur.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Formations/Formation de Formation en Impro.md",
+                "file": "Formations/Exercices/Personnage et Gimmicks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Formation de Formation en Impro"
+              "title": "Personnage et Gimmicks"
             }
           }
         ]
@@ -172,6 +172,16 @@
   },
   "active": "8457813ac6101cf5",
   "lastOpenFiles": [
+    "Formations/Exercices/Template • Exercice.md",
+    "Formations/Exercices/Personnage et Gimmicks.md",
+    "Formations/Workshops/Gimmicks et Duos.md",
+    "Méta/Comment contribuer.md",
+    "index.md",
+    "Méta",
+    "fred.exclidraw.md",
+    "Drawing 2026-01-22 22.52.47.excalidraw.md",
+    "Formations/Workshops",
+    "Formations/Exercices/Experimental",
     "Formations/Exercices/Youri.md",
     "Formations/Formation de Formation en Impro.md",
     "Formations/Préparer un exercice....md",
@@ -198,19 +208,9 @@
     "Campagnes/Gen/Nighteye _ Under The Ash - Character Sheet.svg",
     "Lore/Misc/Squad 9-9.md",
     "Lore/Misc/Division 9.md",
-    "Vasko Levskaya.md",
-    "Lore/Misc/Nightars.md",
-    "Cerebral Interfaces.md",
-    "Lore/Misc/Mainland.md",
-    "Lore/Locations/Speliotei.md",
-    "Lore/Misc/Upheaval.md",
-    "Ragnarok.md",
     "Campagnes/2025/Untitled.base",
     "Lore/Characters",
-    "Campagnes/Gen",
-    "Campagnes/2025",
     "Untitled.canvas",
-    "Lore/Media/Oural4.png",
-    "Lore/Media"
+    "Lore/Media/Oural4.png"
   ]
 }
